@@ -1,7 +1,7 @@
 export default function Checker({ data }: { data: any[] }) {
   return (
     <div className="mt-20 px-4">
-      <h3 className="text-xl font-black mb-4 text-[#ffffff] uppercase">Wallet Leaderboard</h3>
+      <h3 className="text-xl font-black mb-4 text-[#ffffff] uppercase">Whitelist Checker</h3>
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse border-2 border-black">
           <thead className="bg-black text-white uppercase text-xs">
@@ -9,7 +9,7 @@ export default function Checker({ data }: { data: any[] }) {
               <th className="p-3">User</th>
               <th className="p-3">Wallet</th>
               <th className="p-3 text-center">Ref Points</th>
-              <th className="p-3 text-center">Status</th>
+              <th className="p-3 text-center">WL Status</th>
             </tr>
           </thead>
           <tbody className="bg-white">
@@ -19,7 +19,7 @@ export default function Checker({ data }: { data: any[] }) {
                 <td className="p-3 text-sm opacity-60 font-mono">{user.wallet.slice(0,6)}...{user.wallet.slice(-4)}</td>
                 <td className="p-3 text-center font-black text-brand-blue">{user.ref_count}</td>
                 <td className="p-3 text-center">
-                  {user.is_whitelisted ? '✅' : '⏳'}
+                  {user.is_whitelisted ? <span className="text-green-300">Approved</span> : <span className="text-yellow-300">Pending</span>}
                 </td>
               </tr>
             ))}

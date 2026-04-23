@@ -41,7 +41,7 @@ body::after {
   z-index: -1;
   /* Adjust 4px for blur strength and 0.4 for darkness */
   background-color: rgba(0, 0, 0, 0.4); 
-  backdrop-filter: blur(7px); 
+  backdrop-filter: blur(3px); 
 }
 
 /* Custom Crayon-style button border */
