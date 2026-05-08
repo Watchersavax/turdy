@@ -25,7 +25,7 @@ const steps = [
   { 
     id: 'like_rt', 
     label: 'Like & RT Post', 
-    url: 'https://x.com/TurdyETH/status/2049901626555830714', 
+    url: 'https://x.com/TurdyETH/status/2052797496137859272', 
     placeholder: 'Paste Like/RT Link',
     pattern: /^(https?:\/\/)?(www\.)?(twitter\.com|x\.com)\/.+/,
     error: "Paste a valid X/Twitter link"
@@ -33,7 +33,7 @@ const steps = [
   { 
     id: 'comment', 
     label: 'Tag 2 friends and Comment EVM', 
-    url: 'https://x.com/TurdyETH/status/2049901626555830714', 
+    url: 'https://x.com/TurdyETH/status/2052797496137859272', 
     placeholder: 'Paste Comment Link',
     pattern: /^(https?:\/\/)?(www\.)?(twitter\.com|x\.com)\/.+/,
     error: "Paste a valid X/Twitter link"
@@ -41,7 +41,7 @@ const steps = [
   { 
     id: 'quote', 
     label: 'Quote this Post', 
-    url: 'https://x.com/TurdyETH/status/2049901626555830714', 
+    url: 'https://x.com/TurdyETH/status/2052797496137859272', 
     placeholder: 'Paste Quote Link',
     pattern: /^(https?:\/\/)?(www\.)?(twitter\.com|x\.com)\/.+/,
     error: "Paste a valid X/Twitter link"
